@@ -203,6 +203,23 @@ function TaskList({ onEdit }) {
                 gap: 1
               }}
             >
+              {task.priority && (
+                <Chip
+                  label={task.priority}
+                  size="small"
+                  sx={{
+                    height: 20,
+                    fontSize: '0.7rem',
+                    fontWeight: 600,
+                    background: task.priority === 'P1' 
+                      ? 'linear-gradient(135deg, #f44336 0%, #d32f2f 100%)'
+                      : task.priority === 'P2'
+                      ? 'linear-gradient(135deg, #ff9800 0%, #f57c00 100%)'
+                      : 'linear-gradient(135deg, #4caf50 0%, #388e3c 100%)',
+                    color: 'white',
+                  }}
+                />
+              )}
               {task.due_date && (
                 <Chip
                   icon={<EventIcon sx={{ fontSize: 14 }} />}

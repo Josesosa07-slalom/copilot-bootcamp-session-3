@@ -92,3 +92,26 @@ li:last-child {
   color: #d32f2f;
   font-weight: bold;
 }
+
+/* Priority button colors - from priority-field-ui-sketch.png */
+.priority-btn {
+  flex: 1;
+  border-radius: 8px !important;
+  border: 1px solid #7A7A7A !important;
+  color: #7A7A7A !important;
+  font-weight: 600 !important;
+}
+
+.priority-btn:hover {
+  background-color: rgba(122, 122, 122, 0.1) !important;
+}
+
+.priority-btn.Mui-selected {
+  background-color: #07F2E6 !important;
+  color: white !important;
+  border-color: #07F2E6 !important;
+}
+
+.priority-btn.Mui-selected:hover {
+  background-color: #05D4C9 !important;
+}
